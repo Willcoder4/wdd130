@@ -76,7 +76,7 @@ h1 {
 .hero article img {
     width: 100px;
     height: 70px;
-    float: left;
+    float: right;
     margin-top: 1rem;
     border-radius: 5px;
 }
