@@ -202,7 +202,7 @@ footer img {
     height: auto;
 }
 
-footer nav {
+.socialmedia {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -214,8 +214,14 @@ footer p {
     margin: 0;
 }
 
+nav a:hover, nav a:focus {
+    color: goldenrod;
+}
 
-
+nav a:active {
+    color: var(--accent1-color);
+    text-decoration: none;
+}
 
 
 
