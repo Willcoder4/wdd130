@@ -126,11 +126,17 @@ h1 {
     margin: 0.5rem 1rem 0.5rem 1rem;
 }
 
-.history, .adventure {
+.history, .adventure, .newsletter {
     background-color: gainsboro;
     border-radius: 10px;
     box-shadow: 0 1px 10px black;
 }
+
+.newsletter {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+}
+
 .history .history-layout {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -303,4 +309,240 @@ nav a:active {
     background-color: var(--secondary-color);
     color: var(--accent2-color);
     box-shadow: 0 1px 5px var(--secondary-color);
+}
+
+.hero-home {
+    position: relative;
+}
+.hero-cta {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    height: 40%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 2rem 1rem;
+    align-items: center;
+    font-size: larger;
+}
+
+.hero-cta h1 {
+    position: static;
+    /* top: 1px; */
+    padding: 0 3rem;
+    /* background-color: transparent; */
+}
+
+.hero-cta article, .adventure-cta article, .newsletter {
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    font-size: 1.5rem;
+    /* padding: 1rem; */
+}
+
+.hero-cta .action-btn, .adventure-cta .action-btn, .newsletter button {
+    padding: 1rem 3rem;
+    font-size: large;
+    /* border: 1px solid var(--secondary-color); */
+    border-radius: 30px;
+    background-color: var(--primary-color);
+    width: 80%;
+    color: var(--accent1-color);
+    box-shadow: 0 1px 20px var(--primary-color);
+}
+
+.hero-cta .action-btn a, .adventure-cta .action-btn a {
+    text-decoration: none;
+    color: var(--accent1-color);
+    font-weight: bold;
+    font-size: large;
+    text-shadow: 0 1px 10px black;
+}
+
+.hero-cta .action-btn:hover, .hero-cta .action-btn:focus, .adventure-cta .action-btn:hover, .adventure-cta .action-btn:focus, .newsletter button:hover, .newsletter button:focus {
+    background-color: var(--accent2-color);
+    /* color: var(--accent2-color); */
+    box-shadow: 0 1px 20px var(--secondary-color);
+}
+
+.history-home {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+.history-home p {
+    width: 80%;
+    justify-self: start;
+    align-self: center;
+    padding: 2rem;
+    order: 2;
+}
+
+.history-home img {
+    justify-self: end;
+}
+
+.adventure-images-home {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    /* grid-template-rows: 1fr; */
+    gap: .5rem;
+}
+
+.adventure-images-home figure img {
+    width: 100%;
+}
+
+.adventure-cta {
+    display: grid;
+}
+
+.adventure-cta article {
+    /* width: 100%; */
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+}
+
+.newsletter input, .newsletter button {
+    margin: .5rem;
+    padding: 0.5rem;
+    font-size: large;
+    border-radius: 5px;
+    border: 1px solid var(--primary-color);
+}
+
+.trip-descriptions, .hero-home-cta {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: gainsboro;
+}
+
+.trip-descriptions h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: navy;
+}
+
+.trip-descriptions p, .hero-home-cta p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.trip-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.trip-card {
+  background-color: var(--secondary-color);
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: left;
+}
+
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.trip-card h3 {
+  font-size: 1.3rem;
+  margin: 0.5rem 1rem;
+  color: darkblue;
+}
+
+.trip-card p {
+  margin: 0 1rem 1rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.trip-table {
+  padding: 2rem 1rem;
+  text-align: center;
+  background-color: gainsboro;
+}
+
+.trip-table h2 {
+  font-size: 2rem;
+  color: navy;
+  margin-bottom: 0.5rem;
+}
+
+.trip-table p {
+  max-width: 700px;
+  margin: 0 auto 1.5rem;
+}
+
+.trip-table table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  font-size: 1rem;
+}
+
+.trip-table th,
+.trip-table td {
+  border: 1px solid #ccc;
+  padding: 0.75rem;
+  text-align: center;
+}
+
+.trip-table th {
+  background-color: navy;
+  color: white;
+}
+
+.trip-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.trip-table tr:hover {
+  background-color: #e8f0ff;
+}
+
+.cta {
+  background-color: gainsboro;
+  text-align: center;
+  padding: 2.5rem 1rem;
+  margin: 3rem auto;
+  max-width: 900px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.cta h2 {
+  font-size: 1.8rem;
+  color: #004080; 
+  margin-bottom: 1rem;
+}
+
+.cta p {
+  font-size: 1.1rem;
+  color: #333;
+  max-width: 600px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #004080;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 64, 128, 0.3);
 }
